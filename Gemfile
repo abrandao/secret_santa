@@ -22,13 +22,27 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
+
+# A Ruby client that tries to match Redis' API one-to-one, while still providing an idiomatic interface.
+gem 'redis'
+# Simple, efficient background processing for Ruby.
+gem 'sidekiq'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+# A modern responsive front-end framework based on Material Design.
+gem 'materialize-sass', '~> 1.0.0'
+# Add Google Material Icons in your Rails projects easily. It is a library with +900 icons
+gem 'material_icons' 
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -48,6 +62,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+
+  gem "factory_bot_rails"
+  gem "ffaker"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
