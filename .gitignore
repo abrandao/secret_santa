@@ -93,7 +93,7 @@ yarn-debug.log*
 *.code-workspace
 
 ### Database ###
-/db/postgres
-db/
-db/*
+db/postgres
+test/
+
 # End of https://www.toptal.com/developers/gitignore/api/rails,linux,vscode
