@@ -10,7 +10,7 @@ require 'rspec/rails'
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
-  config.include Devise::Test::ControllerHelps, type: :controller
+  config.include Devise::Test::ControllerHelpers, type: :controller
 end
 
 # Add additional requires below this line. Rails is not loaded until this point!
