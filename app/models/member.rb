@@ -10,11 +10,11 @@ class Member < ApplicationRecord
       break random_token unless Member.exists?(token: random_token)
     end
     self.save!
+  end
 
     protected
 
-    def set_campaign_pending
-      delf.campaign.update(status: :pending)
-    end
+  def set_campaign_pending
+    delf.campaign.update(status: :pending)
   end
 end
