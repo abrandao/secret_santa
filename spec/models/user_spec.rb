@@ -1,5 +1,5 @@
 require 'rails_helper'
-  devise :database_authenticable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :campaigns, dependent: :destroy
+RSpec.describe User, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
