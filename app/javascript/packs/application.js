@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("./navbar.coffee")
+require("./datepicker.coffee")
 
 import 'materialize-css/dist/js/materialize'
 import '../stylesheets/application'

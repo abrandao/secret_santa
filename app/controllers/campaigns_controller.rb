@@ -47,6 +47,7 @@ class CampaignsController < ApplicationController
       if @campaign.status != "pending"
         format.json { render json: 'Já foi sorteada', status: :unprocessable_entity }
       elsif @campaign.members.count < 3
+        format.html { render 'show'}
         format.json { render json: 'A campanha precisa de pelo menos 3 pessoas', status: :unprocessable_entity }
       else
         CampaignRaffleJob.perform_later @campaign
